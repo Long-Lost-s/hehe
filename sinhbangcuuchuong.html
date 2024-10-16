@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bảng 9 Chương</title>
+</head>
+<body>
+
+<script>
+    let zaa, i, j;
+    zaa = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
+    j=1;
+    while (j<10){
+        zaa = zaa +"<tr>";
+        i=2;
+        while (i<10){
+            zaa = zaa + `<td>${i} * ${j} = ${i*j}</td>`;
+            i++;
+        }
+        zaa = zaa + "</tr>";
+        i=2;
+        j++;
+    }
+    zaa = zaa + "</table>";
+    document.write(zaa);
+    // em khong hieu sao day so cua em no cu bi theo hang doc ay chi
+</script>
+</body>
+</html>
